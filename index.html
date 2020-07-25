@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Simple Library</title>
+        <meta charset="UTF-8"/>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <h1>Simple Library</h1>
+        <form id = "add-book-form" class = "hidden" onsubmit="addBookFromForm(); return false">
+            <table>
+                <tr>
+                    <td>Title:</td>
+                    <td><input type = "text" id="title" required></td>
+                </tr>
+                <tr>
+                    <td>Author (First Last):</td>
+                    <td><input type = "text" id="author" required></td>
+                </tr>
+                <tr>
+                    <td>Genre:</td>
+                    <td><input type ="text" id="genre" required></td>
+                </tr>
+                <tr>
+                    <td>Number of pages:</td>
+                    <td><input type="number" id="num-pages" required></td>
+                </tr>
+                <tr>
+                    <td>Have you read it yet?:</td>
+                    <td><input type="checkbox" id="have-read"></td>
+                </tr>
+                <tr>
+                    <td><input type="submit" value="Submit"></td>
+                    <!-- <td><button>Submit</button></td> -->
+                </tr>
+            </table>
+        </form>
+
+        <button id = "btn-add-book" onclick="toggleForm()">Add Book</button>
+        <div id = "container"></div>
+
+        <script type="text/javascript" src="script.js"></script>
+
+    </body>
+</html>
